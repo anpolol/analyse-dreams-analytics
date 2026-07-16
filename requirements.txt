@@ -1,5 +1,6 @@
 python-telegram-bot
 langgraph
+langchain
 langchain-core
 langchain-openai
 langfuse
