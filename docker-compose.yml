@@ -1,0 +1,14 @@
+services:
+  bot:
+    build: .
+    container_name: analyse-dreams-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    networks:
+      - dreams_lk_net
+
+networks:
+  dreams_lk_net:
+    external: true
+    name: analyse-dreams-lk_default

@@ -1,0 +1,8 @@
+python-telegram-bot
+langgraph
+langchain-core
+langchain-openai
+langfuse
+sqlalchemy
+psycopg2-binary
+typing_extensions
