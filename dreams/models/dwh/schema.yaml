@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: dim_users
+    description: "Справочник пользователей: первый источник и ключевые даты"
+    columns:
+      - name: user_id
+        description: "ID пользователя, уникальный"
+        tests:
+          - unique
+          - not_null
+      - name: utm_source
+        description: "Источник первого касания"
+        tests:
+          - accepted_values:
+              values: ['yandex', 'telegram', 'direct']
+              config:
+                where: "utm_source is not null"
+
+  - name: dim_date
+    description: "Календарь: одна строка на день"
+    columns:
+      - name: date
+        tests:
+          - unique
+          - not_null

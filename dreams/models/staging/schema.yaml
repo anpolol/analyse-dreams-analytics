@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: stg_events
+    description: "Очищенные события: нормализованные UTM"
+    columns:
+      - name: event_name
+        tests:
+          - not_null
+      - name: occurred_at
+        tests:
+          - not_null
+
+  - name: stg_payments
+    description: "Очищенные платежи с флагом успешности"
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+      - name: amount
+        tests:
+          - not_null
+      - name: is_successful
+        tests:
+          - not_null

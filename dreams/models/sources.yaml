@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw_public
+    schema: public
+    tables:
+      - name: events
+      - name: users_payment
