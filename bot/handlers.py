@@ -9,7 +9,7 @@ from langchain_core.messages import HumanMessage
 from langfuse.langchain import CallbackHandler
 
 ALLOWED_USER_ID = int(os.environ["ALLOWED_USER_ID"])
-
+ 
 langfuse_handler = CallbackHandler()
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):

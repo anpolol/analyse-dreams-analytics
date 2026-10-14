@@ -6,3 +6,8 @@ sources:
     tables:
       - name: events
       - name: users_payment
+
+  - name: raw
+    schema: raw
+    tables:
+      - name: ad_costs

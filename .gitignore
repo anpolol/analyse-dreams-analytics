@@ -3,3 +3,7 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+airflow/.env
+dreams/.user.yml
+dreams/profiles.yml
+logs/

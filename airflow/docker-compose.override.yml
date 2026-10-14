@@ -1,0 +1,13 @@
+services:
+  scheduler:
+    volumes:
+      - /Users/polinaandreeva/Projects/analyse-dreams-analytics/dreams:/usr/local/airflow/dbt_project:rw
+  dag-processor:
+    volumes:
+      - /Users/polinaandreeva/Projects/analyse-dreams-analytics/dreams:/usr/local/airflow/dbt_project:rw
+  api-server:
+    volumes:
+      - /Users/polinaandreeva/Projects/analyse-dreams-analytics/dreams:/usr/local/airflow/dbt_project:rw
+  triggerer:
+    volumes:
+      - /Users/polinaandreeva/Projects/analyse-dreams-analytics/dreams:/usr/local/airflow/dbt_project:rw
